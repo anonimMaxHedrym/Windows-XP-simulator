@@ -23,11 +23,9 @@ class MyWindow(arcade.Window):
         super().__init__(width, height, title)
         self.bg = arcade.load_texture("fon.jpg")
         self.comp = Comp()
-        self.touch = None
-
-
+        
     def setup(self):
-        pass
+        self.touch = None
 
     def on_draw(self):
         self.clear()
